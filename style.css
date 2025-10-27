@@ -79,10 +79,28 @@ article h1{
 aside{
     background-color:rgb(171, 130, 75);
     float: right;
-    width: 450px;
+    width: 490px;
     margin-right: 30px;
-   
+    margin-top: 7px;
+    
+}
 
+aside h1{
+    text-align: center;
+    font-family: "Modern Antiqua", serif;
+font-weight: 400;
+font-style: normal;
+ text-shadow: 2px 3px 2px #776247;
+}
+
+aside p{
+    text-align: center;
+    font-family: "Modern Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+   text-shadow: 2px 3px 2px #925e3b;
+   font-size: 17px;
+    
 }
 .centralizarVideo {
     margin-left: 60px;
@@ -130,89 +148,3 @@ margin-top: 10px;
 }
 
 
-.carrossel {
- overflow: hidden;
-  padding: 20px;
-  border-radius: 8px;
-  width: 700px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.carrossel-container {
-  display: flex;
-  gap: 20px;           
-  transition: transform 0.5s ease;
-}
-
-.slide {
-border-radius: 10px;
-  padding: 10px;
-  position: relative;
-}
-
-.slide img {
-   width: 130px;
-  height: auto;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-
-.slide.ativo {
-  display: flex;
-}
-
-.texto {
-  max-width: none; 
-  color: #000;
-  text-align: left;
-  margin-left: 10px;
-}
-
-.texto h2 {
-  margin-bottom: 10px;
-}
-
-.btn {
-position: absolute;
-  top: 5%; 
-  transform: translateY(-50%);
-  font-size: 2rem;
-  color:  rgb(126, 96, 58);
-  border: none;
-  cursor: pointer;
-  padding: 5px 10px;
-  background-color: rgb(171, 130, 75);
-  z-index: 10;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  color: #000000;
-}
-
-.anterior {
-
-  left: 10px;
-}
-
-.proximo {
-  
-   right: 10px;
-}
-
-aside.carrossel {
-    position: absolute;
-   margin-top: 1px;    
-   margin-right: 40px;
-  right: 10px;         
-  width: 400px; 
-  height: 700px;
-}
-
-
-#slide-fran img { top: 50px; left: 8px; position: relative; width: 200px; height: 200px; }
-#slide-fran .texto {  right: 10px ;left: 16px; top: 90px; position: relative; text-align: left;  }
-    #slide-meianoite img { width: 200px; height: 200px; position: relative; top: 360px; right: 325px; }
-    #slide-meianoite .texto { left: 150px; }
