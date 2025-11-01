@@ -5,21 +5,22 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
-    
+    grid-template-rows: auto 1fr auto; 
+  grid-template-columns: 1fr;
 }
 header{
-    background-color: rgb(100, 0, 0);
+    background-color: rgb(80, 0, 0);
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 2px 5px rgb(0, 0, 0);
     padding: 2px 20px;
+    position:static;
   
   
 
 }
 .menu a:hover{
-    color:rgb(171, 130, 75);
+    color:rgb(0, 0, 0);
      font-style: oblique;
      text-shadow: 2px 3px 2px #3f0000;
 }
@@ -30,34 +31,37 @@ display: flex;
 margin: 0;
 padding: 0;
 list-style: none;
-
+ margin-left: 10px;
 
 }
 
 .menu a{
-    color: rgb(0, 0, 0);
+    color: rgb(171, 130, 75);
     text-decoration:none;
-  font-family: "Modern Antiqua", serif;
+  font-family: "Mystery Quest", system-ui, sans-serif;
   font-weight: 400;
   font-style: normal;
- text-shadow: 2px 3px 2px #500000;
- font-size: 17px;
-  
+ text-shadow: 2px 3px 2px #4c0000;
+ font-size: 20px;
+  text-decoration: underline;
+  padding: 10px 8px;
+ 
 }
 
 
 
 nav{
-    margin-right: 300px;
+    margin-right: 43px;
     text-align: right;
     padding-top: 35px;
-    margin-top: 10px;
-    margin-left: 7px;
+    margin-top: 4px;
+    margin-left: 1px;
     flex-shrink: 0;
 }
 
 main{
     margin-top: 45px;
+    grid-column: 1 / 2;
 }
 article{
     background-color: rgb(171, 130, 75);
@@ -69,39 +73,63 @@ article{
 
 article h1{
     text-align: center;
-      font-family: "Modern Antiqua", serif;
+  font-family: "Emilys Candy", serif;
   font-weight: 400;
   font-style: normal;
    text-shadow: 2px 3px 2px #776247;
+   
+
+}
+
+article p{
+
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  
 
 }
 
 aside{
     background-color:rgb(171, 130, 75);
     float: right;
-    width: 490px;
-    margin-right: 30px;
-    margin-top: 7px;
+    width: 430px;
+    height: 730px;
+    margin-right: 35px;
+    margin-top: 10%;
+margin-bottom: 10%;
     
 }
 
 aside h1{
     text-align: center;
-    font-family: "Modern Antiqua", serif;
-font-weight: 400;
-font-style: normal;
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
  text-shadow: 2px 3px 2px #776247;
+ margin-top: 26px;
 }
 
 aside p{
     text-align: center;
-    font-family: "Modern Antiqua", serif;
-    font-weight: 400;
-    font-style: normal;
-   text-shadow: 2px 3px 2px #925e3b;
-   font-size: 17px;
-    
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 45px;
+    font-size: 17px;
 }
+
+.art{
+     width: 300px;
+    height: 180px ;
+    margin-left: 66px;
+}
+
+
 .centralizarVideo {
     margin-left: 60px;
 }
@@ -112,14 +140,17 @@ aside p{
   font-style: normal;
   text-shadow: 2px 3px 2px #430000;
   margin-top: 30px;
+  color: rgb(171, 130, 75);
+    margin-left: 50px;
   
 }
 
 .logo h1:hover{
-    color:rgb(171, 130, 75) ;
+    color:rgb(0, 0, 0) ;
     font-style: oblique;
     text-shadow: #000000;
    cursor: default;
+   
 }
 
 .perfil-logo {
@@ -147,4 +178,35 @@ margin-left: 10px;
 margin-top: 10px;
 }
 
+.sublinhado {
+  text-decoration: underline;
+}
 
+footer{
+    background-color: rgb(80, 0, 0);
+    padding-bottom: 1%;
+   
+}
+
+footer p{
+margin-bottom: 1px;
+    text-align: center;
+
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.footer-link {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.footer-link:hover {
+  color: rgb(171, 130, 75);
+  transform: scale(1.05);
+}
